@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+header{
+    background-image: url("../images/hero_image.png");
+    height: 650px;
+}
+nav h1{
+    font-weight: 700;
+    font-size: 34px;
+    color: #054C73;
+}
+nav ul{
+    width: 560px;
+}
+nav ul li{
+    font-weight: 600;
+    font-size: 16px;
+    color: #333333;
+}
+nav svg{
+    width: 24px;
+    height: 24px;
+}
+.hero{
+    width: 50%;
+    background-color: #DFE9F4;
+}
+.hero p:first-child{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color:#333333;
+}
+.hero h1{
+    font-weight: 700;
+    color: #054C73;
+    font-size: 52px;
+    line-height: 65px;
+}
+.hero p:last-child{
+    font-weight: 500;
+    color: #333333;
+    font-size: 18px;
+    line-height: 39px;
+}
+.hero button,.section3 .left button{
+    width: 250px;
+    height: 65px;
+    background-color: #054C73;
+    font-weight: 700;
+    font-size: 16px;
+}
+.section1{
+    background-color: #F2F5FF;
+}
+.section1 img{
+    color: #111111;
+    width: 55px;
+}
+.section1 .writing p:first-child{
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+}
+.section1 .writing p:last-child{
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+}
+.section2,.section3,.section4,.section5,.section6{
+    padding-top: 100px;
+}
+.section2 .writing,.section4 .writing,.section5 .writing{
+    width: 35%;
+}
+.section2 .writing h2,.section3 .left h2,.section4 .writing h2,.section5 .writing h2,.section6 .writing h2{
+    font-weight: 700;
+    font-size: 32px;
+    color:#333333 ;
+}
+.section2 .writing p,.section3 .left p,.section4 .writing p,.section5 .writing p,.section6 .writing p{
+    font-weight: 400;
+    font-size: 20px;
+    color:#666666;
+}
+.section2 .images{
+    width: 90%;
+}
+.section2 .images img{
+    width: 360px;
+    height: 460px;
+}
+.section2 .images img:first-child{
+    border-top-left-radius: 25%;
+}
+.section3 .left,.section3 img{
+    width: 45%;
+}
+.section3 .left p{
+    line-height: 39px;
+}
+.section4 .cards .card,.section5 .cards .card{
+    width: 380px;
+}
+.section4 .cards .card p{
+    font-weight: 600;
+}
+.section5 span{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    top: 70%;
+    border: 12px solid white;
+    font-weight: 700;
+    font-size: 24px;
+}
+.section5 .card h2{
+    font-weight: 700px;
+    font-size: 24px;
+    color: #333333;
+}
+.section5 .card p{
+    font-weight: 400;
+    font-size: 18px;
+    color: #666666;
+}
+.section6{
+    background-color: #F2F5FF;
+}
+.section6 .writing{
+    width: 40%;
+}
+.section6 .submit input{
+    width: 525px;
+    height: 75px;
+}
+.section6 .submit input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+}
+.section6 .submit button{
+    width: 150px;
+    height: 75px;
+    background-color: #054C73;
+    font-weight: 700;
+    font-size: 16px;
+}
+footer{
+    background-color: #054C73;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+footer h2{
+    font-weight: 700;
+    font-size: 24px;
+}
+footer .left{
+    width: 475px;
+}
+footer .right{
+    width: 600px;
+}
+footer .left p{
+    font-weight: 400;
+    font-size: 16px;
+}
+footer .right .images{
+    width: 575px;
+}
+footer .right img{
+    width: 175px;
+}
+
+@media screen and (max-width:992px){
+    .section3 .left,.section3 img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero{
+        width: 100%;
+        padding-top: 10%;
+        background-color: transparent;
+    }
+    .section1 .part,.section2 .writing,.section4 .writing,.section5 .writing,.section6 .writing,
+    footer .left,footer .right{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .header{
+        height: 750px;
+    }
+    .hero{
+        width: 100%;
+    }
+    nav h1{
+        font-size: 22px;
+    }
+    .hero h1{
+        font-size: 30px;
+        line-height: 43px;
+    }
+    .hero p:last-child{
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .section1 img{
+        width: 48px;
+    }
+    .section1 .writing p:first-child{
+        font-size: 20px;
+    }
+    .section2 .writing h2,.section3 .left h2,.section4 .writing h2,.section5 .writing h2,.section6 .writing h2{
+        font-size: 26px;
+    }
+    .section2 .writing p,.section4 .writing p,.section5 .writing p,.section6 .writing p,.section5 .card p{
+        font-size: 14px;
+    }
+    .section2 .images img,.section4 .cards .card,.section5 .cards .card{
+        width: 320px;
+    }
+    .section3 .left p{
+        line-height: 34px;
+    }
+    footer .right .images{
+        width: 280px;
+    }
+    footer .right img{
+        width: 130px;
+    }
+}
